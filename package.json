@@ -1,0 +1,29 @@
+{
+  "name": "my-function",
+  "version": "1.0.0",
+  "description": "AWS Lambda function for pianosystem",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NumaKana/pianosystem.git"
+  },
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "build": "rm -rf lib && babel -d lib src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf deploy-* lib version.json"
+  },
+  "author": "Timothy Gu <timothygu99@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1.29",
+    "bluebird": "^3.4.6",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015-node4": "^2.1.0",
+    "babel-preset-es2017": "^6.16.0"
+  }
+}

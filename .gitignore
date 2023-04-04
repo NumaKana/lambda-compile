@@ -1,0 +1,6 @@
+node_modules
+deploy-*
+lib
+lilypond-*.tar.*
+proddeps
+versions.json
